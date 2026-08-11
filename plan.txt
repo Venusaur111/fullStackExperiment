@@ -1,0 +1,13 @@
+mon-projet-backend/
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── repositories/
+│   ├── routes/
+│   ├── security/
+│   └── server.ts
+├── migrations/
+├── .env
+├── .gitignore
+└── package.json
