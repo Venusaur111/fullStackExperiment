@@ -5,15 +5,19 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
-    // Environment Settings
+    // Environment Settings, modern Node.js configs
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "target": "esnext",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
     // and npm install -D @types/node
+
+    //For the sake of compatibility with Express
+    "esModuleInterop": true,
 
     // Other Outputs
     "sourceMap": true,

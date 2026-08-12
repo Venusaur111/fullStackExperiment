@@ -1,13 +1,14 @@
 mon-projet-backend/
 ├── src/
-│   ├── config/
-│   ├── controllers/
-│   ├── models/
-│   ├── repositories/
-│   ├── routes/
-│   ├── security/
-│   └── server.ts
-├── migrations/
-├── .env
-├── .gitignore
-└── package.json
+│   ├── config/ <--- Containing configuration files to the db
+│   ├── controllers/ <--- Receiving HTTP query according URL
+│   ├── models/ <--- Containing interfaces or TS type of models
+│   ├── repositories/ <--- Data Access Object/ containing plain SQL query to interact with PostgreSQL
+│   ├── routes/ <--- Redirecting queries to the correct controller
+│   ├── security/ <--- Grouping security mecanism together
+│   └── server.ts <--- Entering point, booting Node.js, loading environment variable and initializing connexion to db
+├── migrations/ <--- Containig database table cration and updating scripts
+├── .env <--- Containing secrets such as database password, ports (ignored by git)
+├── .gitignore <--- Containig what are to be ignored by Git
+├── tsconfig.json <--- Guiding tsc
+└── package.json <--- Managing dependencies and project configuration
