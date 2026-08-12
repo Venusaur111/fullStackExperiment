@@ -1,20 +1,27 @@
 import express, {Router, type Request, type Response} from 'express';
 
 const route = Router();
+const studentController = new StudentController;
 
-route.get("/", (req: Request, res: Response) => {
+route.get("/", async (req: Request, res: Response) => {
+    studentController.findAll();
     res.json({message: "Get request"});
 })
 
-route.put("/:id", (req: Request, res: Response) => {
+route.get("/:id", async (req: Request, res: Response) => {
+    return studentController.getStudentById(req, res);
+});
+
+route.put("/:id", async (req: Request, res: Response) => {
     res.json({message: "Update request"});
 })
 
-route.delete("/:id", (req: Request, res: Response) => {
+route.delete("/:id", async (req: Request, res: Response) => {
+    studentController.deleteStudentById(req, res);
     res.json({message: "Delete request"});
 })
 
-route.post("/", (req: Request, res: Response) => {
+route.post("/", async (req: Request, res: Response) => {
     res.json({message: "Create request"});
 })
 
