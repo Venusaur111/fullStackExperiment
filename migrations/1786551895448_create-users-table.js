@@ -10,7 +10,7 @@ export const shorthands = undefined;
  */
 export const up = (pgm) => {
     pgm.createTable('users', {
-        id: 'id', // Équivalent à serial PRIMARY KEY
+        id: 'id',
         name: { type: 'varchar(255)', notNull: true },
         email: { type: 'varchar(255)', notNull: true, unique: true },
         password: { type: 'varchar(255)', notNull: true },
