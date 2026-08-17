@@ -1,7 +1,6 @@
 import {type Request, type Response} from 'express';
-import { StudentRepository } from '../repositories/student.repository.js';
 
-const studentRepository = new StudentRepository();
+const studentRepository = new StudentController();
 export class StudentController {
     getStudents= async (req: Request, res: Response): Promise<Response> =>{
         try{
@@ -13,7 +12,7 @@ export class StudentController {
     }
     getStudentById = async (req: Request, res: Response): Promise<Response> => {
         try{
-            const id = parseInt(req.params.id);
+            const id = parseInt<number>(req.params.id) as number;
 
             const student = await studentRepository.findById(id);
             if(!student){
@@ -39,7 +38,7 @@ export class StudentController {
     }
     deleteStudentById= async (req: Request, res: Response): Promise<Response> => {
         try{
-            const id= parseInt(req.params.id);
+            const id= parseInt<number>(req.params.id) as number;
             const success = await studentRepository.delete(id);
             if (!success){
                 return res.status(404).json({message: 'Student not found'});
@@ -51,7 +50,7 @@ export class StudentController {
     }
     updateStudentName= async (req: Request, res: Response): Promise<Response> => {
         try{
-            const id = parseInt(req.params.id);
+            const id = parseInt<number>(req.params.id) as number;
             const {name} = req.body;
 
             if (!name || !name.length) return res.status(400).json({message: 'Invalid body response'});
@@ -67,7 +66,7 @@ export class StudentController {
     }
     updateStudentEmail= async (req: Request, res: Response): Promise<Response> => {
         try{
-            const id= parseInt(req.params.id);
+            const id= parseInt<number>(req.params.id) as number;
             const {email} = req.body;
 
             if (!email || !email.length) return res.status(400).json({message: 'Invalid body response'});
@@ -81,7 +80,7 @@ export class StudentController {
     }
     updateStudentPassword= async (req: Request, res: Response): Promise<Response> => {
         try {
-            const id = parseInt(req.params.id);
+            const id = parseInt<number>(req.params.id) as number;
             const {password} = req.body;
 
             if (!password || !password.length) return res.status(400).json({message: 'Invalid body response'});
@@ -95,7 +94,7 @@ export class StudentController {
     }
     updateStudentPhone= async (req: Request, res: Response): Promise<Response> => {
         try{
-            const id= parseInt(req.params.id);
+            const id= parseInt<number>(req.params.id) as number;
             const {phone_number} = req.body;
 
             if (!phone_number || !phone_number.toString().length) return res.status(400).json({message: 'Invalid body response'});

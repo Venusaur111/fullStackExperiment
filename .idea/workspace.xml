@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2cc4933-5c6a-48b1-ab74-9d863c123e96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tokken.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/db.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/student.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/student.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/student.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/student.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/students.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/students.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/security/auth.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/security/auth.middleware.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +77,19 @@
     "ts.external.directory.path": "/snap/intellij-idea-ultimate/816/plugins/javascript-plugin/jsLanguageServicesImpl/external"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="experimets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="experimets" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

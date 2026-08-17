@@ -1,4 +1,5 @@
 import express, {Router, type Request, type Response} from 'express';
+import { StudentController } from '../controllers/student.controller.js';
 
 const route = Router();
 const studentController = new StudentController;

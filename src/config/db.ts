@@ -4,7 +4,7 @@ import * as process from "node:process";
 
 dotenv.config();
 
-const { Pool } = pg;
+export const { Pool } = pg;
 
 export const db = new Pool({
     connectionString: process.env.DATABASE_URL,
@@ -12,9 +12,9 @@ export const db = new Pool({
     idleTimeoutMillis: 36000,
 })
 
-pool.on('connect', () => {
+db.on('connect', () => {
     console.log('Successfully connected to the database');
 })
-pool.on('error', err => {
+db.on('error', err => {
     console.error(err.stack);
-})
+});
