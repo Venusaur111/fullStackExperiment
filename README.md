@@ -14,4 +14,3 @@ This project is a backend application developed as part of the web programming c
 1. Clone the repository:
    ```bash
    git clone [<repository-url>](https://github.com/Venusaur111/fullStackExperiment.git)
-   cd Job/HEI/WEB/WEB2/experimets
