@@ -9,8 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/config/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/db.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/student.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/student.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repositories/student.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/student.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/students.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/students.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/security/auth.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/security/auth.middleware.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,12 +70,15 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "/home/aina/.config/JetBrains/IntelliJIdea2026.2/node/versions/20.20.2/bin/node",
     "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.start.executor": "Run",
     "settings.editor.selected.configurable": "GitLink.ProjectSettings",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "/snap/intellij-idea-ultimate/816/plugins/javascript-plugin/jsLanguageServicesImpl/external"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="experimets" />
       <method v="2">
@@ -89,6 +90,43 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

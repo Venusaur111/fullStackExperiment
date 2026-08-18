@@ -1,12 +1,12 @@
-import pg from 'pg';
+import pkg from 'pg';
 import dotenv from 'dotenv';
 import * as process from "node:process";
 
 dotenv.config();
 
-export const { Pool } = pg;
+export const { Pool } = pkg;
 
-export const db = new Pool({
+export const dbPool = new Pool({
     connectionString: process.env.DATABASE_URL,
     max: 20,
     idleTimeoutMillis: 36000,

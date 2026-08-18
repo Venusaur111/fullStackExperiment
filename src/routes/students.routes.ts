@@ -1,29 +1,27 @@
-import express, {Router, type Request, type Response} from 'express';
+import { Router, type Request, type Response } from 'express';
 import { StudentController } from '../controllers/student.controller.js';
 
 const route = Router();
-const studentController = new StudentController;
+const studentController = new StudentController();
 
 route.get("/", async (req: Request, res: Response) => {
-    studentController.findAll();
-    res.json({message: "Get request"});
-})
+    return studentController.findAll(req, res);
+});
 
 route.get("/:id", async (req: Request, res: Response) => {
     return studentController.getStudentById(req, res);
 });
 
 route.put("/:id", async (req: Request, res: Response) => {
-    res.json({message: "Update request"});
-})
+    return studentController.updateStudentName(req, res); // Ou une autre méthode de maj selon votre besoin
+});
 
 route.delete("/:id", async (req: Request, res: Response) => {
-    studentController.deleteStudentById(req, res);
-    res.json({message: "Delete request"});
-})
+    return studentController.deleteStudentById(req, res);
+});
 
 route.post("/", async (req: Request, res: Response) => {
-    res.json({message: "Create request"});
-})
+    return studentController.addStudent(req, res);
+});
 
 export default route;
